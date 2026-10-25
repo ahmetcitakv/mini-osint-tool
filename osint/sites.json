@@ -37,5 +37,6 @@
   "Letterboxd":  { "url": "https://letterboxd.com/{}/",            "errorType": "status_code" },
   "Fiverr":      { "url": "https://www.fiverr.com/{}",             "errorType": "status_code" },
   "Disqus":      { "url": "https://disqus.com/by/{}/",             "errorType": "status_code" },
-  "Kick":        { "url": "https://kick.com/{}",                   "errorType": "status_code" }
+  "Kick":        { "url": "https://kick.com/{}",                   "errorType": "status_code" },
+  "Instagram":   { "url": "https://www.instagram.com/{}",          "errorType": "status_code" }
 }
