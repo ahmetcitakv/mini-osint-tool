@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Arac ciktilari (commit ETME)
+*.db
+osint_gecmis.db
+*_Rapor.html
+*.json
+!osint/sites.json
