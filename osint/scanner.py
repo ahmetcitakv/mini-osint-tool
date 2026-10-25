@@ -10,7 +10,7 @@ import requests
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Language": "en-US,en;q=0.9",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
@@ -43,6 +43,9 @@ def site_kontrol(ad, ayar, kullanici_adi, oturum, timeout=8):
     elif hata_tipi == "message":
         # Hata metni sayfada YOKSA hesap vardir.
         bulundu = ayar["errorMsg"] not in cevap.text
+    elif hata_tipi == "contains":
+        # Belirteç sayfada VARSA hesap vardir (ters mantik).
+        bulundu = ayar["foundMsg"] in cevap.text
     elif hata_tipi == "response_url":
         # Giris/ana sayfaya yonlendirilmediyse hesap vardir.
         bulundu = ayar["errorUrl"] not in cevap.url

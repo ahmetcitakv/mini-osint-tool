@@ -9,7 +9,7 @@ mini OSINT aracı. Hem komut satırı (CLI) hem grafik arayüz (GUI) ile çalı�
 
 ## Özellikler
 
-- **Paralel tarama** — `ThreadPoolExecutor` ile 24+ platform aynı anda.
+- **Paralel tarama** — `ThreadPoolExecutor` ile 38 platform aynı anda.
 - **Status-code tabanlı tespit** — eski metin-arama yöntemine göre daha sağlam.
 - **GUI + CLI** — aynı çekirdek motoru (`osint/scanner.py`) paylaşır.
 - **JSON çıktı** — sonuçları başka araçlara besleme.
