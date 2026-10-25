@@ -10,3 +10,6 @@ osint_gecmis.db
 *_Rapor.html
 *.json
 !osint/sites.json
+
+# Arac/editor durum dosyalari
+.omc/
